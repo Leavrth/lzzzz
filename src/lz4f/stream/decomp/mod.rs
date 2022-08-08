@@ -37,7 +37,7 @@ enum State {
     },
 }
 
-pub(crate) struct Decompressor<'a> {
+pub struct Decompressor<'a> {
     ctx: DecompressionContext,
     state: State,
     buffer: Vec<u8>,

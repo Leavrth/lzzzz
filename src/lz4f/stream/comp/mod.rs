@@ -14,7 +14,7 @@ use crate::lz4f::{
     Dictionary, Preferences,
 };
 
-pub(crate) struct Compressor {
+pub struct Compressor {
     ctx: CompressionContext,
     prefs: Preferences,
     state: State,
